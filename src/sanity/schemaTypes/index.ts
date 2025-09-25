@@ -14,16 +14,16 @@ import { splitImageType } from './blocks/splitImageType';
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
-    blockContentType,
-    categoryType,
-    postType,
-    authorType,
-    pageType,
-    pageBuilderType,
-    faqType,
-    faqsType,
-    featuresType,
-    heroType,
-    splitImageType,
+    //blockContentType,
+    // categoryType,
+    //postType,
+    // authorType,
+    // pageType,
+    // pageBuilderType,
+    // faqType,
+    // faqsType,
+    // featuresType,
+    // heroType,
+    // splitImageType,
   ],
 };
