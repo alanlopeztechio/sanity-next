@@ -18,11 +18,15 @@ export const splitImageType = defineType({
       name: 'title',
       type: 'string',
     }),
+    defineField({
+      name: 'image',
+      type: 'image',
+    }),
   ],
   preview: {
     select: {
       title: 'title',
-      media: 'Image',
+      media: 'image',
     },
     prepare(value, viewOptions) {
       const { media, title } = value;

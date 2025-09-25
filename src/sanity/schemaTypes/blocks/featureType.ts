@@ -1,3 +1,4 @@
+import { title } from 'process';
 import { defineField, defineType } from 'sanity';
 
 export const featuresType = defineType({
@@ -29,4 +30,15 @@ export const featuresType = defineType({
       ],
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+    },
+    prepare({ title }) {
+      return {
+        title,
+        subtitle: 'Features',
+      };
+    },
+  },
 });

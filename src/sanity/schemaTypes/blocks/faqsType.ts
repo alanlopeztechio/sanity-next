@@ -1,3 +1,4 @@
+import { title } from 'process';
 import { defineField, defineType } from 'sanity';
 
 export const faqsType = defineType({
@@ -16,4 +17,15 @@ export const faqsType = defineType({
       of: [{ type: 'reference', to: [{ type: 'faq' }] }], //Hace una referencia al documento faq
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+    },
+    prepare({ title }) {
+      return {
+        title,
+        subtitle: 'FAQs',
+      };
+    },
+  },
 });
